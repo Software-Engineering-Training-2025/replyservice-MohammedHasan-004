@@ -107,10 +107,11 @@ public class ReplyService{
             else if (type==ReplyType.CONCISE){
                 return "Please clarify.";
             }
+            return "this message not found and not in any type";
         }
+        return "this message not found and not in any type";
 
 
-        // TODO: Implement mapping according to README canonical expectations.
         // Requirements:
         // - null or blank -> "Please say something."
         // - For known messages, return exact string for each ReplyType.
