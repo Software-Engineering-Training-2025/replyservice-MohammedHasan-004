@@ -11,7 +11,7 @@ public class ReplyService{
         }
         else if (message.equals("hi")){
             if (type==ReplyType.FORMAL){
-                return "Hello. How can I assist you today?";
+                return "Hello. How may I assist you today?";
             }
             else if (type==ReplyType.FRIENDLY){
                 return "Hey there! 😊 How can I help?";
@@ -22,7 +22,7 @@ public class ReplyService{
         }
         else if (message.equals("hello")){
             if (type==ReplyType.FORMAL){
-                return "Hello. How can I assist you today?";
+                return "Hello. How may I assist you today?";
             }
             else if (type==ReplyType.FRIENDLY){
                 return "Hi! 👋 What’s up?";
