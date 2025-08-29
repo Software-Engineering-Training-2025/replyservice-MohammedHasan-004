@@ -5,7 +5,11 @@ package org.example;
 public class ReplyService{
 
     public String reply(String message, ReplyType type) {
-        if (message.equals("hi")){
+        if (message==null || message.trim().isEmpty())
+        {
+            return "Please say something.";
+        }
+        else if (message.equals("hi")){
             if (type==ReplyType.FORMAL){
                 return "Hello. How can I assist you today?";
             }
@@ -93,10 +97,6 @@ public class ReplyService{
                 return "I’m your assistant.";
             }
         }
-        else if (message.trim().isEmpty())
-        {
-            return "Please say something.";
-        }
         else{
             if (type==ReplyType.FORMAL){
                 return "Could you clarify your request?";
@@ -107,7 +107,6 @@ public class ReplyService{
             else if (type==ReplyType.CONCISE){
                 return "Please clarify.";
             }
-            return "this message not found and not in any type";
         }
         return "this message not found and not in any type";
 
