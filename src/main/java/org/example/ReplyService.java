@@ -93,7 +93,7 @@ public class ReplyService{
                 return "I’m your assistant.";
             }
         }
-        else if (message==null || message.trim().isEmpty())
+        else if (message.trim().isEmpty())
         {
             return "Please say something.";
         }
